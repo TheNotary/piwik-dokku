@@ -1,5 +1,10 @@
 # Piwik on Dokku
 
+## Known Bug
+
+*  When you first login to the app to configure the system, you'll need to make sure you plugin `index.php?action=firstWebsiteSetup` or the post action for the form will break.  It seems this has something to do with angular (tsk, tsk).  Out of time to work on this repo, PR welcome, Notice this repo uses `sed` to hack Piwik after its downloaded.  If you care to debug legacy Angular JS, you might use this same strategy to hack a solution together.  Good Luck!
+
+
 ## Deploy to Dokku
 
 ###### Overview
