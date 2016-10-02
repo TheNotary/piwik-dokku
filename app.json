@@ -1,0 +1,30 @@
+{
+    "name": "Piwik",
+    "description": "Piwik is the leading open-source analytics platform that gives you more than just powerful analytics:",
+    "repository": "https://github.com/dz0ny/heroku-docker-piwik",
+    "logo": "http://piwik.org/wp-content/themes/piwik/assets/img/media/piwik.png",
+    "keywords": [
+        "php",
+        "piwik",
+        "analytics",
+        "h4x0r"
+    ],
+    "env": {
+      "ADMIN_LOGIN": {
+        "description": "This is the login name used to login to the web traffic monitoring app",
+        "value": "admin"
+      },
+      "ADMIN_PASSWORD": {
+        "description": "This is the password used to login to the web traffic monitoring app",
+        "value": "change_me123"
+      },
+      "ADMIN_EMAIL": {
+        "description": "I think you can configure emails, so change this value if you want",
+        "value": "admin@example.com"
+      },
+      "DB_PREFIX": {
+        "description": "MySQL database prefix for tables. It's pretty much pointless in a 12f environment...",
+        "value": "piwik_"
+      }
+    }
+}
